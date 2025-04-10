@@ -17,4 +17,8 @@ def mask_account_card(name_and_number_card: str) -> str:
 
     return f"{name_card}{get_mask_account(number_card)}"
 
+
+def get_date(date: str) -> str:
+    return f"{date[8:10]}.{date[5:7]}.{date[:4]}"
+
 print(mask_account_card("Счет 73654108430135874305"))
