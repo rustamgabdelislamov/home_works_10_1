@@ -10,8 +10,3 @@ def get_mask_account(account: str) -> str:
     return f'**{account[-4:]}'
 
 
-user_card_number = input()
-user_mask_account = input()
-
-print(get_mask_card_number(user_card_number))
-print(get_mask_account(user_mask_account))
