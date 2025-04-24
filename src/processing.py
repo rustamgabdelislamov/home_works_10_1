@@ -1,3 +1,4 @@
+
 def filter_by_state(list_dict: list[dict], state: str = 'EXECUTED') -> list[dict]:
     """Функция которая возвращает список словарей с парметром 'state'"""
 
