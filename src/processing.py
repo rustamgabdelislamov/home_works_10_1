@@ -5,13 +5,8 @@ def filter_by_state(list_dict: list[dict], state: str = 'EXECUTED') -> list[dict
     return sort_by_date(filter_by_state_)
 
 
-def sort_by_date(filter_by_state_: list[dict], sorting=None) -> list[dict]:
+def sort_by_date(filter_by_state_: list[dict], reverse: bool = True) -> list[dict]:
     """Функция сортировки по дате"""
 
-    if sorting == None:
-        sorted_list = sorted(filter_by_state_, key=lambda x: x['date'], reverse=True)
-        return sorted_list
-
-    else:
-        sorted_list = sorted(filter_by_state_, key=lambda x: x['date'])
-        return sorted_list
+    sorted_list = sorted(filter_by_state_, key=lambda x: x['date'], reverse=reverse)
+    return sorted_list
