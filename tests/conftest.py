@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.fixture
 def numbers():
     return '**1234'
@@ -8,5 +9,3 @@ def numbers():
 @pytest.fixture
 def len_figure():
     return 'Неправильный номер счета'
-
-
